@@ -75,7 +75,7 @@ const Navbar = () => {
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <img
-            src="src/images/sai-logo.jpg"
+            src="public\images\sai-logo.jpg"
             alt="Sai Architect & Designer"
             className="w-24 rounded-r-full sm:w-18"
           />
