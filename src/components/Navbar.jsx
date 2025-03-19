@@ -8,9 +8,9 @@ export const AllProjects=[
     title:"AutoCAD 2D Floor plans",
     description:"In AutoCAD 2D Plan, a floor plan with an outer wall thickness of “9 inches” and an inner wall thickness of “4 1/2 inches” can be created using the “LINE” or “POLYLINE” command. The “OFFSET” command helps maintain consistent wall thickness. Doors and windows can be added using predefined blocks or by drawing manually with “RECTANGLE and ARC” tools. Proper layering ensures clarity, with walls, furniture, and dimensions on separate layers for easy editing.",
     images: [
-      "/src/images/autocad_floor1.png",
-      "/src/images/autocad_floor2.png",
-      "/src/images/autocad_floor3.png"
+      "/Images/autocad_floor1.png",
+      "/Images/autocad_floor2.png",
+      "/Images/autocad_floor3.png"
     ]
   },
   {
@@ -18,8 +18,8 @@ export const AllProjects=[
     title:"AutoCAD Front Elevation",
     description:"A front elevation in AutoCAD is a 2D representation of the front view of a building or object, showing details such as doors, windows, materials, and architectural elements. It is created using precise linework, layers, and annotations to provide a clear and accurate depiction of the structure's appearance. AutoCAD tools like Line, Polyline, Hatch, and Dimension help in drafting front elevations efficiently. These drawings are essential for architectural plans, construction, and visualization purposes.",
     images: [
-      "/src/images/autocad_elevation1.jpg",
-      "/src/images/autocad_elevation2.jpg",
+      "/Images/autocad_elevation1.jpg",
+      "/Images/autocad_elevation2.jpg",
     ]
   },
   {
@@ -27,8 +27,8 @@ export const AllProjects=[
     title:"Apartment Floor Plan",
     description:"An apartment floor plan is a 2D layout that illustrates the arrangement of rooms, walls, doors, windows, and furniture within an apartment unit. It includes key details like room dimensions, circulation paths, and functional spaces such as bedrooms, living areas, kitchens, and bathrooms. AutoCAD and other design software are commonly used to create precise and scalable apartment floor plans, ensuring efficient space utilization and design clarity for architects, builders, and clients.",
     images: [
-      "/src/images/apartment_plan1.png",
-      "/src/images/apartment_plan2.png",
+      "/Images/apartment_plan1.png",
+      "/Images/apartment_plan2.png",
     ]
   },
   {
@@ -36,9 +36,9 @@ export const AllProjects=[
     title:"Revit Architecture",
     description:"Revit Architecture is a powerful BIM (Building Information Modeling) software widely used in exterior design for creating precise and detailed building facades. It allows designers to generate realistic 3D models, apply materials, and analyze sunlight and shading for energy efficiency. With tools like parametric components, curtain walls, and rendering capabilities, Revit enables architects to visualize and refine exterior aesthetics while ensuring structural accuracy. Its collaboration features also allow teams to work seamlessly on projects, improving design coordination and efficiency.",
     images: [
-      "/src/images/revit_architecture1.png",
-      "/src/images/revit_architecture2.png",
-      "/src/images/revit_architecture3.png"
+      "/Images/revit_architecture1.png",
+      "/Images/revit_architecture2.png",
+      "/Images/revit_architecture3.png"
     ]
   },
   {
@@ -46,11 +46,11 @@ export const AllProjects=[
     title:"SketchUP + Enscape + V Ray",
     description:"This 30' x 50' modern 2BHK house design features a sleek and stylish façade with a combination of textures, including stone cladding, decorative panelling, and contemporary railing details. The ground floor consists of a spacious living room, two well-ventilated bedrooms, a modern kitchen, and attached bathrooms, ensuring a functional layout. The first floor incorporates an open terrace with a pergola, adding an aesthetic touch and enhancing natural light. The entrance gate and landscaping complement the design, making it an elegant and practical home for modern living.",
     images: [
-      "/src/images/sketchup_enscape1.jpg",
-      "/src/images/sketchup_enscape2.jpg",
-      "/src/images/sketchup_enscape3.png",
-      "/src/images/sketchup_enscape4.png",
-      "/src/images/sketchup_enscape5.png",
+      "/Images/sketchup_enscape1.jpg",
+      "/Images/sketchup_enscape2.jpg",
+      "/Images/sketchup_enscape3.png",
+      "/Images/sketchup_enscape4.png",
+      "/Images/sketchup_enscape5.png",
 
     ]
   }

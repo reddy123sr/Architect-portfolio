@@ -3,17 +3,17 @@ import React from "react";
 // Step 1: Import all images dynamically from a folder
 const importAll = (r) => r.keys().map(r);
 const interiorImages =[
-"src/images/interior/MasterBedroom.png",
-"src/images/interior/ChildrenBedroom.png",
-"src/images/interior/KitchenRoom.png",
-"src/images/interior/Dining Hall.png",
-"src/images/interior/LivingRoom.png",
-"src/images/interior/Mandhir.png",
-"src/images/interior/balcony.jpg",
-"src/images/interior/bathroom.jpg",
-"src/images/interior/cieling.jpg",
-"src/images/interior/LivingHall.jpg",
-"src/images/interior/Wallscreen.jpg",
+"Images/interior/MasterBedroom.png",
+"Images/interior/ChildrenBedroom.png",
+"Images/interior/KitchenRoom.png",
+"Images/interior/Dining Hall.png",
+"Images/interior/LivingRoom.png",
+"Images/interior/Mandhir.png",
+"Images/interior/balcony.jpg",
+"Images/interior/bathroom.jpg",
+"Images/interior/cieling.jpg",
+"Images/interior/LivingHall.jpg",
+"Images/interior/Wallscreen.jpg",
 
 ]
 

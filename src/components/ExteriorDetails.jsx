@@ -1,16 +1,16 @@
 import React from 'react'
 
 const Exterior=[
-"src/images/exterior/Frontview.jpg",
-"src/images/exterior/Frontview2.jpg",
-"src/images/exterior/Sideview.jpg",
-"src/images/exterior/Sideview2.jpg",
-"src/images/exterior/Topview.jpg",
-"src/images/exterior/Topview2.jpg",
-"src/images/exterior/Stairs.jpg",
-"src/images/exterior/g+2 -1 ext.png",
-"src/images/exterior/g+2 ext.png",
-"src/images/exterior/g+2 night ext.png",
+"Images/exterior/Frontview.jpg",
+"Images/exterior/Frontview2.jpg",
+"Images/exterior/Sideview.jpg",
+"Images/exterior/Sideview2.jpg",
+"Images/exterior/Topview.jpg",
+"Images/exterior/Topview2.jpg",
+"Images/exterior/Stairs.jpg",
+"Images/exterior/g+2 -1 ext.png",
+"Images/exterior/g+2 ext.png",
+"Images/exterior/g+2 night ext.png",
 
 ]
 const ExteriorDetails = () => {
