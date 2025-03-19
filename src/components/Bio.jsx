@@ -37,7 +37,7 @@ const BioSection = () => {
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center text-left gap-6 relative">
         {/* Profile Image - Placed on Left */}
         <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shadow-lg border-4 border-teal-400">
-          <img src="Images/profile2.jpg" alt="Profile" className="w-full h-full object-cover" />
+          <img src="public/Images/profile2.jpg" alt="Profile" className="w-full h-full object-cover" />
         </div>
 
         {/* Introduction Text */}
