@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { auth, signOut } from "../firebaseConfig";
 import { useNavigate } from "react-router-dom";
+import { getResume,saveResume} from "../services/ResumeService"; // Firestore functions
 
 const Resume = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [driveLink, setDriveLink] = useState("");
-  const [embedLink, setEmbedLink] = useState(
-    localStorage.getItem("resumeLink") ||
-      "https://drive.google.com/file/d/1YudGmScVcizsGuJuUAvjf_x5Xu2vGbNA/preview"
-  );
+  const [embedLink, setEmbedLink] = useState("");
 
-  // Check if user is logged in
+  // **Check if user is logged in (Admin Only)**
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((currentUser) => {
       setUser(currentUser);
@@ -19,24 +17,36 @@ const Resume = () => {
     return () => unsubscribe();
   }, []);
 
-  // Function to convert Drive link to Embed link
+  // **Fetch Latest Resume Link**
+  useEffect(() => {
+    const fetchResume = async () => {
+      const link = await getResume();
+      if (link) {
+        setEmbedLink(link);
+      }
+    };
+    fetchResume();
+  }, []);
+
+  // **Convert Google Drive Link to Embed Format**
   const convertToEmbedLink = (link) => {
     const match = link.match(/\/file\/d\/(.*)\/view/);
-    if (match && match[1]) {
-      return `https://drive.google.com/file/d/${match[1]}/preview`;
-    }
-    return link; // If invalid format, return the same link
+    return match ? `https://drive.google.com/file/d/${match[1]}/preview` : link;
   };
 
-  // Handle Resume Update
-  const handleUpdateResume = () => {
+  // **Handle Resume Update (Admin Only)**
+  const handleUpdateResume = async () => {
     const newEmbedLink = convertToEmbedLink(driveLink);
-    setEmbedLink(newEmbedLink);
-    localStorage.setItem("resumeLink", newEmbedLink);
-    alert("Resume updated successfully!");
+    const success = await saveResume(newEmbedLink);
+    if (success) {
+      setEmbedLink(newEmbedLink);
+      alert("Resume updated successfully!");
+    } else {
+      alert("Failed to update resume. Try again.");
+    }
   };
 
-  // Logout Function
+  // **Admin Logout**
   const handleLogout = async () => {
     await signOut(auth);
     navigate("/login");
@@ -48,11 +58,15 @@ const Resume = () => {
       <h2 className="text-3xl font-bold mb-4">My Resume</h2>
 
       {/* Resume Viewer */}
-      <iframe
-        src={embedLink}
-        className="w-full max-w-2xl h-[500px] rounded-lg shadow-lg"
-        allow="autoplay"
-      ></iframe>
+      {embedLink ? (
+        <iframe
+          src={embedLink}
+          className="w-full max-w-2xl h-[500px] rounded-lg shadow-lg"
+          allow="autoplay"
+        ></iframe>
+      ) : (
+        <p className="text-red-500">Resume not available.</p>
+      )}
 
       {/* Admin Upload Section */}
       {user ? (
@@ -79,14 +93,12 @@ const Resume = () => {
             </button>
           </div>
         </div>
-      ) : (
-        <button
-          onClick={() => navigate("/login")}
-          className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow"
-        >
-          Admin Login to Update Resume
-        </button>
-      )}
+      ) : <button
+      onClick={() => navigate("/login")}
+      className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded shadow"
+    >
+      Admin Login to Update Resume
+    </button>}
     </section>
   );
 };

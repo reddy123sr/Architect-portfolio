@@ -21,6 +21,7 @@ const Contact = () => {
             <h3 className="text-xl font-bold">Our Office</h3>
             <p className="text-gray-300">Sai Architect & Designer, Ongole, India</p>
           </div>
+          
         </div>
         
         {/* Phone */}
