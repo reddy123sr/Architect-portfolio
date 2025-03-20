@@ -113,7 +113,7 @@ const BioSection = () => {
         <div className="relative inline-block">
           <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-cyan-500 blur-lg"></div>
           <div className="relative px-6 py-2 text-white font-bold text-2xl bg-black rounded-full shadow-xl uppercase tracking-widest font-sans">
-            Architecture of Interior Designs
+            Architecture & Interior Designs
           </div>
         </div>
       </div>
