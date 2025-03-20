@@ -1,5 +1,8 @@
 import React from "react";
+import { AllProjects } from "./Navbar";
+import { Link } from "react-router-dom";
 
+const projects=AllProjects
 const Frontimages=[
 "Images/architect/Arch1.jpg",
 "Images/architect/Arch2.jpg",
@@ -66,13 +69,51 @@ const BioSection = () => {
         <div><b>Revit Structure</b></div>
         <div><b>Interior Designing</b></div>
       </div>
+ {/* 🔥 Projects Section 🔥 */}
+ <div className="text-center w-full mt-12 mb-8 flex flex-wrap relative">
+        <div className="relative inline-block">
+          <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-cyan-500 blur-lg"></div>
+          <div className="relative px-6 py-2 text-white font-bold text-2xl bg-black rounded-full shadow-xl uppercase tracking-widest font-sans">
+            Projects
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  {projects.map((project) => (
+    <div
+      key={project.id}
+      className="relative group w-full h-60 bg-gray-800 rounded-lg overflow-hidden shadow-lg"
+    >
+      {/* Background Image */}
+      <img
+        src={project.bg_image} // Ensure each project object has an 'image' property
+        alt={project.title}
+        className="w-full h-full object-cover opacity-30 group-hover:opacity-90 transition duration-300"
+      />
+
+      {/* Project Title Overlay */}
+      <div className="absolute inset-0 flex flex-col items-center justify-center bg-opacity-50 group-hover:bg-opacity-70 transition duration-300">
+        <h2 className="text-white text-xl font-bold text-center">
+          {project.title}
+        </h2>
+        <Link
+          to={`/projects/${project.id}`}
+          className="mt-2 text-teal-300 hover:text-teal-400 transition"
+        >
+          View Details
+        </Link>
+      </div>
+    </div>
+  ))}
+</div>
 
       {/* Architecture Models Header */}
       <div className="text-center w-full mt-12 mb-8 flex flex-wrap relative">
         <div className="relative inline-block">
           <div className="absolute inset-0 bg-gradient-to-r from-teal-400 to-cyan-500 blur-lg"></div>
           <div className="relative px-6 py-2 text-white font-bold text-2xl bg-black rounded-full shadow-xl uppercase tracking-widest font-sans">
-            Architecture Designs
+            Architecture of Interior Designs
           </div>
         </div>
       </div>
@@ -107,6 +148,11 @@ const BioSection = () => {
           <img src="Images/cerificate.png" alt="Certification 1" className="w-full h-auto rounded-lg shadow-lg" />
           <p className="mt-2 text-lg font-sans font-semibold">AutoCAD Certification</p>
         </div>
+        
+<p className="text-lg text-gray-300 max-w-2xl ">
+  If you're looking for innovative architectural designs, we are here to bring your vision to life.  
+  Visit our <Link to="/contact" className="text-teal-400 hover:underline">Contact Us</Link> page and let's discuss your dream project!
+</p>
       </div>
     </section>
   );

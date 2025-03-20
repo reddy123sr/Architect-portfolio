@@ -11,7 +11,16 @@ const Exterior=[
 "Images/exterior/g+2 -1 ext.png",
 "Images/exterior/g+2 ext.png",
 "Images/exterior/g+2 night ext.png",
-
+"Images/exterior/ext1.png",
+"Images/exterior/ext2.png",
+"Images/exterior/ext3.png",
+"Images/exterior/ext4.png",
+"Images/exterior/ext5.png",
+"Images/exterior/ext6.png",
+"Images/exterior/ext7.png",
+"Images/exterior/ext8.png",
+"Images/exterior/ext9.png",
+"Images/exterior/ext10.png",
 ]
 const ExteriorDetails = () => {
   return (
