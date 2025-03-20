@@ -49,7 +49,7 @@ const Contact = () => {
           <FaGlobe className="text-teal-400 text-3xl mr-4" />
           <div>
             <h3 className="text-xl font-bold">Visit Our Website</h3>
-            <p className="text-gray-300">www.saiarchitects.com</p>
+            <p className="text-gray-300">https://saiarchitect-designer.netlify.app/</p>
           </div>
         </div>
       </div>
