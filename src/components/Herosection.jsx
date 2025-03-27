@@ -13,7 +13,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative text-center px-6">
         <h1 className="py-2 my-3 text-6xl font-extrabold tracking-wide bg-gradient-to-r from-teal-400 to-cyan-500 text-transparent bg-clip-text drop-shadow-lg">
-          Sai Architect & Designer
+          Sai Interior Designer
         </h1>
         <p className="text-xl mt-4 text-gray-300 max-w-2xl drop-shadow-md">
           Creating Timeless Architectural Designs with Innovation and Precision
