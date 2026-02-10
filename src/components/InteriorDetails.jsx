@@ -10,11 +10,26 @@ const interiorImages =[
 "Images/interior/LivingRoom.png",
 "Images/interior/Mandhir.png",
 "Images/interior/balcony.jpg",
-"Images/interior/bathroom.jpg",
+"Images/interior/Bathroom.jpg",
 "Images/interior/cieling.jpg",
 "Images/interior/LivingHall.jpg",
 "Images/interior/Wallscreen.jpg",
-
+"Images/interior/Enscape_Crockery Unit.png",
+"Images/interior/Enscape_Dinning + Wash Basin.png",
+"Images/interior/Enscape_Dinning + Wash Unit.png",
+"Images/interior/Enscape_Front view.png",
+"Images/interior/Enscape_KItchen.png",
+"Images/interior/Enscape_Living Room -1.png",
+"Images/interior/Enscape_Living Room-1.png",
+"Images/interior/Enscape_Living Room-2.png",
+"Images/interior/Enscape_Living Room-3.png",
+"Images/interior/Enscape_Living room.png",
+"Images/interior/Enscape_Master Bed Room-1.png",
+"Images/interior/Enscape_Master Bed Room.png",
+"Images/interior/Enscape_Pooja Mandhir.png",
+"Images/interior/Enscape_Pooja Mandhire.png",
+"Images/interior/Enscape_Tv-Unit.png",
+"Images/interior/Enscape_House.png",
 ]
 
 const InteriorDetails = () => {

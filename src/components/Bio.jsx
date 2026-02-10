@@ -46,7 +46,7 @@ const BioSection = () => {
         {/* Introduction Text */}
         <div className="flex-1">
           <p className="text-lg leading-relaxed font-sans text-justify px-1">
-            I am <b>Kummitha Sai Kumar Reddy</b>I have completed my BTech Civil Engineering in 2024 with 7.27 CGPA, where I developed a strong foundation in architecture. Throughout my academic journey, I focused on enhancing my technical skills, particularly in Architecture designing software. After Completing my BTech. I have trained in AutoCAD 2D/3D Modelling, SketchUp + V-Ray, Enscape, & Revit Architecture & Revit Structure, which have significantly expanded my knowledge in architectural Planning and interior designing. My passion for design drives me to continually improve my skills and stay updated with the latest industry trends, and I am eager to apply my expertise in creating functional and aesthetically pleasing spaces.</p>
+            I am <b>Kummitha Sai Kumar Reddy. </b>I have completed my BTech Civil Engineering in 2024 with 7.27 CGPA, where I developed a strong foundation in architecture. Throughout my academic journey, I focused on enhancing my technical skills, particularly in Architecture designing software. After Completing my BTech. I have trained in AutoCAD 2D/3D Modelling, SketchUp + V-Ray, Enscape, & Revit Architecture & Revit Structure, which have significantly expanded my knowledge in architectural Planning and interior designing. My passion for design drives me to continually improve my skills and stay updated with the latest industry trends, and I am eager to apply my expertise in creating functional and aesthetically pleasing spaces.</p>
         </div>
       </div>
 
@@ -121,7 +121,7 @@ const BioSection = () => {
       {/* <h1 className="text-3xl font-bold text-teal-400 mb-6">Interior Designs</h1> */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {Frontimages.map((image, index) => (
-          <div key={index} className="bg-white p-4 shadow-lg">
+          <div key={index} className="p-4 shadow-lg">
             <img
               src={image}
               alt={`Architectural Design ${index + 1}`}
@@ -154,6 +154,13 @@ const BioSection = () => {
   Visit our <Link to="/contact" className="text-teal-400 hover:underline">Contact Us</Link> page and let's discuss your dream project!
 </p>
       </div>
+    {/* Contact Page */}
+    <img className="h-auto rounded-lg shadow-lg my-3 sm:w-full md:w-3/4" src="Images/Visiting_Details.jpeg"
+    alt="image"/>
+  <div>
+  
+    
+  </div>
     </section>
   );
 };
