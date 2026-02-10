@@ -17,7 +17,7 @@ const ProjectDetails = () => {
         <h3 className="text-2xl font-semibold text-cyan-300">Overview</h3>
         <p className="mt-2 text-lg text-gray-300">{project.description}</p>
       </div>
-      {/* Images in Vertical Layout */}
+      {/* images in Vertical Layout */}
       <div className="space-y-4 my-4">
         {project.images.map((image, index) => (
           <div key={index} className="rounded-lg p-2">

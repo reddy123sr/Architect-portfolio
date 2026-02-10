@@ -9,9 +9,9 @@ export const AllProjects=[
     bg_image:"https://tse4.mm.bing.net/th?id=OIP.PgpYuV1WXRoeoeltRrsvqwHaEK&pid=Api&P=0&h=220",
     description:"In AutoCAD 2D Plan, a floor plan with an outer wall thickness of “9 inches” and an inner wall thickness of “4 1/2 inches” can be created using the “LINE” or “POLYLINE” command. The “OFFSET” command helps maintain consistent wall thickness. Doors and windows can be added using predefined blocks or by drawing manually with “RECTANGLE and ARC” tools. Proper layering ensures clarity, with walls, furniture, and dimensions on separate layers for easy editing.",
     images: [
-      "/Images/autocad_floor1.png",
-      "/Images/autocad_floor2.png",
-      "/Images/autocad_floor3.png"
+      "/images/autocad_floor1.png",
+      "/images/autocad_floor2.png",
+      "/images/autocad_floor3.png"
     ]
   },
   {
@@ -20,8 +20,8 @@ export const AllProjects=[
     bg_image:"https://tse2.mm.bing.net/th?id=OIP.ysenncAWfVbcvOD5nAhN3wHaEK&pid=Api&P=0&h=220",
     description:"A front elevation in AutoCAD is a 2D representation of the front view of a building or object, showing details such as doors, windows, materials, and architectural elements. It is created using precise linework, layers, and annotations to provide a clear and accurate depiction of the structure's appearance. AutoCAD tools like Line, Polyline, Hatch, and Dimension help in drafting front elevations efficiently. These drawings are essential for architectural plans, construction, and visualization purposes.",
     images: [
-      "/Images/autocad_elevation1.jpg",
-      "/Images/autocad_elevation2.jpg",
+      "/images/autocad_elevation1.jpg",
+      "/images/autocad_elevation2.jpg",
     ]
   },
   {
@@ -30,8 +30,8 @@ export const AllProjects=[
     bg_image:"https://tse2.mm.bing.net/th?id=OIP.-CBXdyxZCZcdRp9w-v_U_gHaEK&pid=Api&P=0&h=220",
     description:"An apartment floor plan is a 2D layout that illustrates the arrangement of rooms, walls, doors, windows, and furniture within an apartment unit. It includes key details like room dimensions, circulation paths, and functional spaces such as bedrooms, living areas, kitchens, and bathrooms. AutoCAD and other design software are commonly used to create precise and scalable apartment floor plans, ensuring efficient space utilization and design clarity for architects, builders, and clients.",
     images: [
-      "/Images/apartment_plan1.png",
-      "/Images/apartment_plan2.png",
+      "/images/apartment_plan1.png",
+      "/images/apartment_plan2.png",
     ]
   },
   {
@@ -40,9 +40,9 @@ export const AllProjects=[
     bg_image:"https://tse2.mm.bing.net/th?id=OIP.B-XzfIrFGa93mLmFFjD1PAHaEK&pid=Api&P=0&h=220",
     description:"Revit Architecture is a powerful BIM (Building Information Modeling) software widely used in exterior design for creating precise and detailed building facades. It allows designers to generate realistic 3D models, apply materials, and analyze sunlight and shading for energy efficiency. With tools like parametric components, curtain walls, and rendering capabilities, Revit enables architects to visualize and refine exterior aesthetics while ensuring structural accuracy. Its collaboration features also allow teams to work seamlessly on projects, improving design coordination and efficiency.",
     images: [
-      "/Images/revit_architecture1.png",
-      "/Images/revit_architecture2.png",
-      "/Images/revit_architecture3.png"
+      "/images/revit_architecture1.png",
+      "/images/revit_architecture2.png",
+      "/images/revit_architecture3.png"
     ]
   },
   {
@@ -51,11 +51,11 @@ export const AllProjects=[
     bg_image:"https://tse2.mm.bing.net/th?id=OIP.IBXREsj0UKVhtVvEjxds6QHaFP&pid=Api&P=0&h=220",
     description:"This 30' x 50' modern 2BHK house design features a sleek and stylish façade with a combination of textures, including stone cladding, decorative panelling, and contemporary railing details. The ground floor consists of a spacious living room, two well-ventilated bedrooms, a modern kitchen, and attached bathrooms, ensuring a functional layout. The first floor incorporates an open terrace with a pergola, adding an aesthetic touch and enhancing natural light. The entrance gate and landscaping complement the design, making it an elegant and practical home for modern living.",
     images: [
-      "/Images/sketchup_enscape1.jpg",
-      "/Images/sketchup_enscape2.jpg",
-      "/Images/sketchup_enscape3.png",
-      "/Images/sketchup_enscape4.png",
-      "/Images/sketchup_enscape5.png",
+      "/images/sketchup_enscape1.jpg",
+      "/images/sketchup_enscape2.jpg",
+      "/images/sketchup_enscape3.png",
+      "/images/sketchup_enscape4.png",
+      "/images/sketchup_enscape5.png",
 
     ]
   }
@@ -80,7 +80,7 @@ const Navbar = () => {
         <div className="container flex items-center justify-between">
           {/* Logo */}
           <img
-            src="Images/sai-logo.jpg"
+            src="images/sai-logo.jpg"
             alt="Sai Architect & Designer"
             className="w-16 rounded-r-full sm:24"
           />

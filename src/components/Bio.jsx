@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const projects=AllProjects
 const Frontimages=[
-"Images/architect/Arch1.jpg",
-"Images/architect/Arch2.jpg",
-"Images/architect/Arch3.jpg",
-"Images/architect/Arch4.jpg",
-"Images/architect/Arch5.jpg",
-"Images/architect/Arch6.jpg",
-"Images/architect/Arch7.jpg",
-"Images/architect/Arch8.jpg",
-"Images/architect/Arch9.jpg",
+"images/architect/Arch1.jpg",
+"images/architect/Arch2.jpg",
+"images/architect/Arch3.jpg",
+"images/architect/Arch4.jpg",
+"images/architect/Arch5.jpg",
+"images/architect/Arch6.jpg",
+"images/architect/Arch7.jpg",
+"images/architect/Arch8.jpg",
+"images/architect/Arch9.jpg",
 
 ]
 
@@ -40,7 +40,7 @@ const BioSection = () => {
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center text-left gap-6 relative">
         {/* Profile Image - Placed on Left */}
         <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden shadow-lg border-4 border-teal-400">
-          <img src="Images/profile2.jpg" alt="Profile" className="w-full h-full object-cover" />
+          <img src="images/profile2.jpg" alt="Profile" className="w-full h-full object-cover" />
         </div>
 
         {/* Introduction Text */}
@@ -145,7 +145,7 @@ const BioSection = () => {
       {/* Certifications Section */}
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto relative">
         <div className="text-center">
-          <img src="Images/cerificate.png" alt="Certification 1" className="w-full h-auto rounded-lg shadow-lg" />
+          <img src="images/cerificate.png" alt="Certification 1" className="w-full h-auto rounded-lg shadow-lg" />
           <p className="mt-2 text-lg font-sans font-semibold">AutoCAD Certification</p>
         </div>
         
@@ -155,7 +155,7 @@ const BioSection = () => {
 </p>
       </div>
     {/* Contact Page */}
-    <img className="h-auto rounded-lg shadow-lg my-3 sm:w-full md:w-3/4" src="Images/Visiting_Details.jpeg"
+    <img className="h-auto rounded-lg shadow-lg my-3 sm:w-full md:w-3/4" src="images/Visiting_Details.jpeg"
     alt="image"/>
   <div>
   

@@ -16,7 +16,7 @@ const About = () => {
       {/* Certifications Section */}
       <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-8 max-w-4xl mx-auto relative">
         <div className="text-center">
-          <img src="Images/cerificate.png" alt="Certification 1" className="w-full h-auto rounded-lg shadow-lg" />
+          <img src="images/cerificate.png" alt="Certification 1" className="w-full h-auto rounded-lg shadow-lg" />
           <p className="mt-2 text-lg font-sans font-semibold">AutoCAD Certification</p>
         </div>
       </div>
